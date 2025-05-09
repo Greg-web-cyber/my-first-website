@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Biography</title>
+    <link rel="stylesheet" href="../css/custom.css">
+    <script src="../js/custom.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .image-section {
+            margin-top: 40px;
+        }
+
+        .image-gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .image-item {
+            text-align: center;
+            width: 220px;
+        }
+
+        .image-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid #ccc;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .province-name {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .motivation-section {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .motivation-btn {
+            padding: 10px 20px;
+            background-color: #007acc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .motivation-message {
+            margin-top: 15px;
+            font-style: italic;
+            color: green;
+        }
+
+        .home-button {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .home-button a button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Life</h1>
+
+    <p>
+        I am Gregory Fofran. I come from a mixed parentage of New Ireland, Madang, West New Britain, and East Sepik Provinces. 
+        I am the third born in a family of 2 beautiful girls and 3 strong boys, totaling 5. I was born at Kavieng General Hospital 
+        in 2002. When I turned 1, my family and I moved to West New Britain where I spent the next 4 years of childhood. 
+        In 2005, we moved to Madang, where all stages of my life have unfolded until today. In 2012, I enrolled in grade 3 at 
+        Erima Primary School in Raikos District of Madang Province, skipping elementary. In 2018, I was selected for Raikos Secondary 
+        School for high school and completed grade 10 in 2019. In 2020, I was selected to do grade 11 at Passam National School of 
+        Excellence in East Sepik Province and completed grade 12 in 2021. In 2022, I enrolled in the Bachelor of Information Technology 
+        program at Don Bosco Technological Institute in Port Moresby. Unfortunately, I couldn't continue in 2023 due to financial 
+        constraints and stayed home for two years. In October 2024, I applied to Divine Word University as a non-school leaver to take 
+        up Bachelor of Information Systems, and this is where I am now in my first year.
+    </p>
+
+    <!-- Image Section -->
+    <div class="image-section">
+        <h2>My Home Provinces</h2>
+        <div class="image-gallery">
+            <div class="image-item">
+                <img src="../media/New_Ireland.jpg" alt="New Ireland Province">
+                <div class="province-name">New Ireland Province</div>
+            </div>
+            <div class="image-item">
+                <img src="../Media/madang_Province.jpg" alt="Madang Province">
+                <div class="province-name">Madang Province</div>
+            </div>
+            <div class="image-item">
+                <img src="../media/kimbe.jpg" alt="West New Britain Province">
+                <div class="province-name">West New Britain Province</div>
+            </div>
+            <div class="image-item">
+                <img src="../media/east_sepik.jpg" alt="East Sepik Province">
+                <div class="province-name">East Sepik Province</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Motivation Button -->
+    <div class="motivation-section">
+        <button class="motivation-btn" onclick="showMotivation()">Get Motivation</button>
+        <p id="motivation-message" class="motivation-message"></p>
+    </div>
+
+    <!-- Back to Home Button -->
+    <div class="home-button">
+        <a href="../index.html">
+            <button>Back to Home</button>
+        </a>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function showMotivation() {
+            const messages = [
+                "Believe in yourself — you're capable of amazing things.",
+                "Great things never come from comfort zones.",
+                "Push yourself, because no one else is going to do it for you.",
+                "Success is the sum of small efforts, repeated day in and day out.",
+                "Your journey is just beginning — stay focused and unstoppable."
+            ];
+            const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+            document.getElementById('motivation-message').textContent = randomMessage;
+        }
+    </script>
+</body>
+</html>

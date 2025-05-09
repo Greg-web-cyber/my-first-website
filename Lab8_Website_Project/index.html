@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Web Project</title>
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="js/custom.js" defer></script>
+    <style>
+        .hero-section {
+            background-image: url('media/b_g.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+            color: white;
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 40px 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        .hero-section h1,
+        .hero-section p {
+            color: white;
+            margin: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #007acc;
+        }
+
+        .id-photo-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .id-photo-container img {
+            width: 180px;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid #ccc;
+        }
+
+        .id-photo-caption {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section with Overlay and Clear Text -->
+    <div class="hero-section">
+        <div class="overlay">
+            <h1>Welcome to My Personal Website</h1>
+            <p><p>Hey there, I am Gregory and this is where you explore my biography, interests, and future goals!
+			This website is a personal portfolio created to showcase my background, academic passions, and ambitions in the tech field. 
+			It reflects my journey as a student of Information Systems at Divine Word University, highlighting what drives me, the skills I'm developing, and where I see myself in the future. 
+			Feel free to navigate through the pages to learn more about who I am and what inspires me.</p>
+</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="pages/bio.html">Personal Biography</a></li>
+            <li><a href="pages/interests.html">Study Interests and Hobbies</a></li>
+            <li><a href="pages/goals.html">Future Career Goals</a></li>
+        </ul>
+    </nav>
+
+    <!-- ID Photo Placeholder -->
+<div class="id-photo-container">
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <img src="media/Greg_ID.jpg" alt="Gregory's ID Photo" style="width: 180px; height: auto; border-radius: 10px; border: 2px solid #ccc;">
+        <p class="id-photo-caption" style="margin-top: 10px; font-weight: bold; color: #333;">Gregory Fofran</p>
+    </div>
+</div>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Gregory's Web Project</p>
+    </footer>
+
+</body>
+</html>

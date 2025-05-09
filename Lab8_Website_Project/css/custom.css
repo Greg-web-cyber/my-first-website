@@ -1,0 +1,55 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #006699;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    background-color: #006699;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #005580;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+    background-color: #ccc;
+    color: #000;
+}
+
+/* Media Elements */
+img, video, audio {
+    display: block;
+    margin: 20px 0;
+    max-width: 100%;
+    border-radius: 5px;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Future Career Goals</title>
+    <link rel="stylesheet" href="../css/custom.css">
+    <script src="../js/custom.js" defer></script>
+    <style>
+        .motivation-section {
+            margin-top: 20px;
+        }
+
+        .motivation-btn {
+            padding: 10px 20px;
+            background-color: #007acc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .motivation-message {
+            margin-top: 15px;
+            font-style: italic;
+            color: green;
+        }
+
+        .home-button {
+            margin-top: 30px;
+        }
+
+        .home-button button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .image-gallery {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .image-box {
+            width: 300px;
+            text-align: center;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid #ccc;
+        }
+
+        .image-box p {
+            margin-top: 8px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Future Career Goals</h1>
+    <p>
+        My goal is to become a professional network and cybersecurity engineer. I plan to use the skills I am gaining from my 
+        studies in Information Systems to work on building secure systems and defending against cyber threats. 
+        I am particularly interested in learning about ethical hacking and data protection. In the future, I hope to contribute 
+        to improving digital security in Papua New Guinea and eventually start my own tech company that trains young developers 
+        and IT professionals. Personally, I aim to become a role model for aspiring students in rural communities.
+    </p>
+
+    <!-- Image Placeholders -->
+    <div class="image-gallery">
+        <div class="image-box">
+            <img src="../media/network_engineer.jpg" alt="Career Image 1">
+            <p>A Network Engineer at work</p>
+        </div>
+        <div class="image-box">
+            <img src="../media/cybersecurity_engineer.jpg" alt="Career Image 2">
+            <p>A Cybersecurity Engineer at work</p>
+        </div>
+    </div>
+
+    <!-- Motivation Button -->
+    <div class="motivation-section">
+        <button class="motivation-btn" onclick="showMotivation()">Get Motivation</button>
+        <p id="motivation-message" class="motivation-message"></p>
+    </div>
+
+    <!-- Back to Home Button -->
+    <div class="home-button">
+        <a href="../index.html">
+            <button>Back to Home</button>
+        </a>
+    </div>
+
+    <!-- Inline JavaScript -->
+    <script>
+        function showMotivation() {
+            const messages = [
+                "Believe in yourself — you're capable of amazing things.",
+                "Great things never come from comfort zones.",
+                "Push yourself, because no one else is going to do it for you.",
+                "Success is the sum of small efforts, repeated day in and day out.",
+                "Your journey is just beginning — stay focused and unstoppable."
+            ];
+            document.getElementById('motivation-message').textContent =
+                messages[Math.floor(Math.random() * messages.length)];
+        }
+    </script>
+</body>
+</html>
